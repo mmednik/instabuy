@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Footer } from '../components/Footer'
+import styles from '../styles/Store.module.css'
 
-export default function Home() {
+export default function Store() {
   return (
     <>
       <Head>
-        <title>InstaBuy</title>
+        <title>mmednik @ InstaBuy</title>
         <meta name="description" content="Social selling" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -18,10 +19,7 @@ export default function Home() {
         
         PayButton
       </main>
-      <footer>
-        InstaBuy
-        Button
-      </footer>
+      <Footer />
     </>
   )
 }
