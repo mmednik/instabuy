@@ -11,7 +11,7 @@ export const Footer = () => {
         placeholder="blur"
       />
       <Button
-        text="button"
+        text="See other stores"
         url="/"
       />
     </footer>

@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { ProfileTitle } from '../components/ProfileTitle'
+import { Stories } from '../components/Stories'
+import { PayButton } from '../components/PayButton'
 import { Footer } from '../components/Footer'
 import styles from '../styles/Store.module.css'
 
@@ -16,9 +18,9 @@ export default function Store() {
         <ProfileTitle />
       </header>
       <main className={styles.main}>
-        Stories - Story y ProgressBarContainer - Progress Bar
+        <Stories />
         
-        PayButton
+        <PayButton />
       </main>
       <Footer />
     </>
