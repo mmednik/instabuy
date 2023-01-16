@@ -10,7 +10,10 @@ export const Footer = () => {
         alt="InstaBuy Logo"
         placeholder="blur"
       />
-      <Button />
+      <Button
+        text="button"
+        url="/"
+      />
     </footer>
   )
 }

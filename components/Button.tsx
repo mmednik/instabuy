@@ -1,5 +1,10 @@
-export const Button = () => {
+interface IButton {
+  text: string,
+  url: string
+}
+
+export const Button = (props:IButton) => {
   return (
-    <a className="button">Button</a>
+    <a className="button" href={props.url}>{props.text}</a>
   )
 }
