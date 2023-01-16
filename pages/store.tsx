@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { ProfileTitle } from '../components/ProfileTitle'
 import { Footer } from '../components/Footer'
 import styles from '../styles/Store.module.css'
 
@@ -12,7 +13,7 @@ export default function Store() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        ProfileTitle
+        <ProfileTitle />
       </header>
       <main className={styles.main}>
         Stories - Story y ProgressBarContainer - Progress Bar

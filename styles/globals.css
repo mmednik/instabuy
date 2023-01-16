@@ -7,6 +7,10 @@
 
   --foreground-rgb: 0, 0, 0;
 
+  --primary: #0094FF;
+  --padding: 5px 10px;
+  --border-radius: 10px;
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -102,4 +106,11 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+a.button {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
 }
