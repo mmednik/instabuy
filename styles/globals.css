@@ -121,15 +121,31 @@ a.button.secondary {
 
 div.progressBarContainer {
   display: flex;
+  position: absolute;
+  width: 95%;
+  top: 5px;
 }
 
 div.progressBarWrapper {
   background-color: #777272;
   height: 5px;
   width: 100%;
+  margin-left: 2%;
 }
 
 div.progressBar {
   background-color: white;
   height: 5px;
+}
+
+div.profileTitle {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  color: white;
+}
+
+div.payButton {
+  position: absolute;
+  top: 500px;
 }

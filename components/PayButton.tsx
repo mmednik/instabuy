@@ -4,7 +4,7 @@ import { Button } from "./Button"
 
 export const PayButton = () => {
   return (
-    <>
+    <div className="payButton">
       <Button
         text="Pay with"
         url="https://www.mercadopago.com"
@@ -15,6 +15,6 @@ export const PayButton = () => {
         alt="MercadoPago Logo"
         placeholder="blur"
       />
-    </>
+    </div>
   )
 }

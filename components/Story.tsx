@@ -1,5 +1,12 @@
+import Image from "next/image"
+import story from "../public/story.png"
+
 export const Story = () => {
   return (
-    <div>Story</div>
+    <Image
+      src={story}
+      alt="Story"
+      placeholder="blur"
+    />
   )
 }
