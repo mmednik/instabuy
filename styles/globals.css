@@ -81,20 +81,17 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  background-color: black;
+  
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  max-width: 420px;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: white;
 }
 
 a {
@@ -120,4 +117,19 @@ a.button.secondary {
   border: 1px solid var(--primary);
   padding: var(--padding);
   border-radius: var(--border-radius);
+}
+
+div.progressBarContainer {
+  display: flex;
+}
+
+div.progressBarWrapper {
+  background-color: #777272;
+  height: 5px;
+  width: 100%;
+}
+
+div.progressBar {
+  background-color: white;
+  height: 5px;
 }
