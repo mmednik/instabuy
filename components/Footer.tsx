@@ -13,6 +13,7 @@ export const Footer = () => {
       <Button
         text="See other stores"
         url="/"
+        type="secondary"
       />
     </footer>
   )

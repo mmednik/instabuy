@@ -1,5 +1,11 @@
+import { Story } from "./Story"
+import { ProgressBarContainer } from "./ProgressBarContainer"
+
 export const Stories = () => {
   return (
-    <div>Story y ProgressBarContainer - Progress Bar</div>
+    <div>
+      <Story />
+      <ProgressBarContainer />
+    </div>
   )
 }
