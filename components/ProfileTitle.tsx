@@ -9,8 +9,10 @@ export const ProfileTitle = () => {
         alt="Profile picture"
         placeholder="blur"
       />
-      <h1>mmednik</h1>
-      <h2>Martín Alejandro Mednik</h2>
+      <div className="userName">
+        <h1>mmednik</h1>
+        <h2>Martín Alejandro Mednik</h2>
+      </div>
     </div>
   )
 }

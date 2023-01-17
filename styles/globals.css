@@ -87,11 +87,14 @@ html {
 }
 
 body {
-  max-width: 420px;
   min-height: 100vh;
   overflow: hidden;
-  margin: 0 auto;
   background-color: white;
+}
+
+main {
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 a {
@@ -122,6 +125,7 @@ a.button.secondary {
 div.progressBarContainer {
   display: flex;
   position: absolute;
+  max-width: 420px;
   width: 95%;
   top: 5px;
 }
@@ -145,7 +149,25 @@ div.profileTitle {
   color: white;
 }
 
+div.profileTitle > div.userName > h1 {
+  font-size: 20px;
+}
+
+div.profileTitle > div.userName > h2 {
+  font-size: 15px;
+}
+
 div.payButton {
   position: absolute;
   top: 500px;
+}
+
+p.storyText {
+  position: absolute;
+  top: 40%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding: 20px 30px;
+  margin-left: 40px;
 }
