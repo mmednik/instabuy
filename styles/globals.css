@@ -1,11 +1,11 @@
 :root {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   --max-width: 1100px;
   --foreground-rgb: 0, 0, 0;
 
   --primary: #0094ff;
-  --secondary: #24FF00;
-  
+  --secondary: #24ff00;
+
   --padding: 5px 10px;
   --border-radius: 15px;
 
@@ -86,13 +86,10 @@ html {
 body {
   min-height: 100vh;
   overflow: hidden;
-  background-color: white;
-}
-
-main {
   max-width: 420px;
   margin: 0 auto;
   position: relative;
+  background-color: white;
 }
 
 a {
@@ -123,6 +120,8 @@ a.button.secondary {
 img.storyImage {
   width: 100vw;
   max-width: 420px;
+  max-height: 85vh;
+  object-fit: cover;
 }
 
 div.progressBarContainer {
@@ -154,7 +153,7 @@ div.profileTitle {
 }
 
 div.profileTitle::before {
-  content: '';
+  content: "";
   width: 75px;
   height: 75px;
   border-radius: 75px;
@@ -198,6 +197,8 @@ div.payButton > a {
   display: inline-block;
   height: 100%;
   width: 100%;
+  font-size: 24px;
+  line-height: 48px;
 }
 
 div.payButton > img {
@@ -209,5 +210,5 @@ div.payButton > img {
 footer {
   display: flex;
   justify-content: space-around;
-  margin-top: 25px;
+  padding-top: 25px;
 }

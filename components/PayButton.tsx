@@ -6,7 +6,7 @@ export const PayButton = () => {
   return (
     <div className="payButton">
       <Button
-        text="Pay with"
+        text="&nbsp;Pay with"
         url="https://www.mercadopago.com"
         type="primary"
       />
