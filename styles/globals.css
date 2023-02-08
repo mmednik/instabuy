@@ -1,15 +1,14 @@
 :root {
   --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
 
-  --primary: #0094FF;
+  --primary: #0094ff;
   --padding: 5px 10px;
-  --border-radius: 10px;
+  --border-radius: 15px;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -83,7 +82,6 @@
 
 html {
   background-color: black;
-  
 }
 
 body {
@@ -122,6 +120,11 @@ a.button.secondary {
   border-radius: var(--border-radius);
 }
 
+img.storyImage {
+  width: 100vw;
+  max-width: 420px;
+}
+
 div.progressBarContainer {
   display: flex;
   position: absolute;
@@ -158,16 +161,25 @@ div.profileTitle > div.userName > h2 {
 }
 
 div.payButton {
+  text-transform: uppercase;
   position: absolute;
   top: 500px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 57px;
+  width: 300px;
 }
 
-p.storyText {
+div.payButton > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+div.payButton > img {
+  right: 0;
   position: absolute;
-  top: 40%;
-  background-color: black;
-  color: white;
-  font-size: 30px;
-  padding: 20px 30px;
-  margin-left: 40px;
+  pointer-events: none;
 }
