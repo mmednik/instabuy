@@ -32,17 +32,19 @@ export const Stories = () => {
     }
   ])
 
+  const storiesLength = stories.length
+
   const [activeStory, setActiveStory] = useState(1)
 
   useEffect(() => {
     const progressInterval = setInterval(() => {
-      
+
       const updatedStories = stories
 
       updatedStories.map((story) => story.active = false)
 
       if (activeStory < updatedStories.length) {
-        setActiveStory(activeStory+1)
+        setActiveStory(activeStory + 1)
       } else {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         setActiveStory(1)
@@ -64,7 +66,7 @@ export const Stories = () => {
         <Story key={story.key} path={story.path} alt={story.alt} active={story.active} />
       ))}
 
-      <ProgressBarContainer />
+      <ProgressBarContainer qty={storiesLength} current={activeStory} />
     </>
   )
 }

@@ -1,12 +1,19 @@
 import { ProgressBar } from "./ProgressBar"
 
-export const ProgressBarContainer = () => {
+interface IProgressBarContainer {
+  qty: number,
+  current: number
+}
+
+export const ProgressBarContainer = (props: IProgressBarContainer) => {
+
   return (
     <div className="progressBarContainer">
-      <ProgressBar progress={100} />
-      <ProgressBar progress={100} />
-      <ProgressBar progress={25} />
-      <ProgressBar progress= {0} />
+
+      {[...Array(props.qty)].map((x, i) =>
+        <ProgressBar progress={(i <= props.current - 1) ? 100 : 0} key={i} />
+      )}
+
     </div>
   )
 }

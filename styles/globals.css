@@ -146,6 +146,7 @@ div.progressBarWrapper {
 div.progressBar {
   background-color: white;
   height: 5px;
+  transition: width 3s;
 }
 
 div.profileTitle {
