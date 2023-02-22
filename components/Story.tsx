@@ -2,18 +2,23 @@ import Image from "next/image"
 
 interface IStory {
   path: string,
-  alt: string
+  alt: string,
+  active: boolean
 }
 
 export const Story = (props: IStory) => {
   const storyImage = require(`../assets/stories/${props.path}.png`);
 
   return (
-    <Image
-      src={storyImage}
-      alt={props.alt}
-      placeholder="blur"
-      className="storyImage"
-    />
+    <>
+      {props.active &&
+        <Image
+          src={storyImage}
+          alt={props.alt}
+          placeholder="blur"
+          className="storyImage"
+        />
+      }
+    </>
   )
 }
