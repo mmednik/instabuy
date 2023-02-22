@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Footer } from '../components/Footer'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
       <header>
         ProfileTitle
       </header>
-      <main className={styles.main}>
+      <main>
         Stories - Story y ProgressBarContainer - Progress Bar
         
         PayButton

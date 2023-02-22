@@ -119,6 +119,7 @@ a.button.secondary {
 
 img.storyImage {
   width: 100vw;
+  height: auto;
   max-width: 420px;
   max-height: 85vh;
   object-fit: cover;
@@ -128,8 +129,11 @@ div.progressBarContainer {
   display: flex;
   position: absolute;
   max-width: 420px;
-  width: 95%;
-  top: 5px;
+  width: 100%;
+  top: 0;
+  padding: 5px 5px 0 0;
+  height: 100px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 div.progressBarWrapper {

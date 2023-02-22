@@ -1,11 +1,17 @@
 import Image from "next/image"
-import story from "../public/story.png"
 
-export const Story = () => {
+interface IStory {
+  path: string,
+  alt: string
+}
+
+export const Story = (props: IStory) => {
+  const storyImage = require(`../assets/stories/${props.path}.png`);
+
   return (
     <Image
-      src={story}
-      alt="Story"
+      src={storyImage}
+      alt={props.alt}
       placeholder="blur"
       className="storyImage"
     />
