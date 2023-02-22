@@ -1,6 +1,6 @@
 import { Story } from "./Story"
 import { ProgressBarContainer } from "./ProgressBarContainer"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Stories = () => {
 
@@ -31,6 +31,32 @@ export const Stories = () => {
       active: false
     }
   ])
+
+  const [activeStory, setActiveStory] = useState(1)
+
+  useEffect(() => {
+    const progressInterval = setInterval(() => {
+      
+      const updatedStories = stories
+
+      updatedStories.map((story) => story.active = false)
+
+      if (activeStory < updatedStories.length) {
+        setActiveStory(activeStory+1)
+      } else {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        setActiveStory(1)
+      }
+
+      updatedStories[activeStory - 1].active = true
+
+      setStories([...updatedStories])
+
+    }, 3000);
+    return () => {
+      clearInterval(progressInterval)
+    };
+  }, [activeStory, stories])
 
   return (
     <>
